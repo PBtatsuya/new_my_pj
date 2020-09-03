@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PbMatchSys</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <li>
+      <%= link_to("Topに戻る","/")%>
+    </li>
+
+    <li>
+      <%= link_to("演奏登録する","/performer/new")%>
+    </li>
+
+    <li>
+      <%= link_to("依頼登録する","/performer/index")%>
+    </li>
+
+    <li>
+      <%= link_to("演奏者一覧","/performer/index")%>
+    </li>
+
+
+    <%= yield %>
+  </body>
+</html>

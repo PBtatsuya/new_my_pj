@@ -1,0 +1,15 @@
+ 
+ <p>新規演奏登録</p>
+ <% @performer.errors.full_messages.each do |message|%>
+  <%= message%>
+ <%end%>
+
+ <%= form_tag("/performer/create") do %>
+    <p>代表者氏名</p>
+      <input name = "leader_name" value = "<%=@performer.leader_name%>">
+    <p>メールアドレス</p>
+      <input name = "email" value = "<%=@performer.email%>">
+    <p>パスワード</p> 
+      <input name = "password" value = "<%=@performer.password%>">
+    <p><input type = "submit" value = "登録する"></p>
+  <%end%>

@@ -1,0 +1,19 @@
+<% @performer.errors.full_messages.each do |message|%>
+  <%= message%>
+ <%end%>
+
+<%= form_tag("/performer/#{@performer.id}/update",{multipart: true}) do %>
+  <p>プロフィール画像</p>
+    <input name = "image" type = "file" >
+  <p>代表者氏名</p>
+    <input name = "leader_name" value = "<%=@performer.leader_name%>">
+  <p>グループ名</p>
+    <input name = "group_name" value = "<%=@performer.group_name%>">
+  <p>メールアドレス</p>
+    <input name = "email" value = "<%=@performer.email%>">
+  <p>プロフィール</p>
+    <input name = "description" value = "<%=@performer.description%>">
+  <p>パスワード</p> 
+    <input name = "password_digest" value = "<%=@performer.password_digest%>">
+  <p><input type = "submit" value = "保存する"></p>
+<%end%>

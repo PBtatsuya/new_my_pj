@@ -1,0 +1,12 @@
+<div class = "Performer_list"> 
+  <% @performers.each do |performer| %>
+    <div class="users-index-item">
+      <div class = "user-left">
+        <img src="<%="/user_images/#{performer.image_name}"%>">
+      </div>
+      <div class = "user-right">
+        <%= link_to(performer.group_name,"/performer/#{performer.id}") %> 
+      </div>
+    </div>
+  <% end %>
+</div>

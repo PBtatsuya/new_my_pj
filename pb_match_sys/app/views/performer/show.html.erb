@@ -1,0 +1,21 @@
+  <div class="user">
+    <img src="<%="/user_images/#{@performer.image_name}"%>">
+    <p>
+      <%= @performer.group_name %>
+    </p>
+    <p>
+      <%= @performer.leader_name %>
+    </p>
+    <p>
+      <%= @performer.email %>
+    </p>
+    <p>
+      <%= @performer.description %>
+    </p>
+    <p>
+      <%= link_to("編集する","/performer/#{@performer.id}/edit")%>
+      <%= link_to("削除する", "/performer/#{@performer.id}/destroy",{method: "destroy"}) %>
+    </p>
+
+   
+  </div>

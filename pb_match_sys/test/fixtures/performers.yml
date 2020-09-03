@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  leader_name: MyString
+  group_name: MyString
+  description: MyText
+  email: MyString
+  piano: false
+
+two:
+  leader_name: MyString
+  group_name: MyString
+  description: MyText
+  email: MyString
+  piano: false
